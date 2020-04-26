@@ -1,0 +1,48 @@
+<Start>:
+    orientation: 'vertical'
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'wea2.jpg'
+    Label:
+        font_size: 150
+        text:"Lets Check the Weather"
+        font_name:"Quake"
+        color: 1,0,1,1
+    Label:
+        color:1,0,0,1
+        font_size: 35
+        text:'Enter City Name'
+        font_name:"Might"
+    BoxLayout:
+        height: '30dp'
+        size_hint_y: None
+        Label:
+            size_hint_x: 2
+        TextInput:
+            id:my_text
+        Label:
+            size_hint_x: 2
+    Label:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+        BoxLayout:
+            Label:
+            Button:
+                background_color: 0.1, 0.5, 0.6, 1
+                width: '150dp'
+                size_hint_x: None
+                text: "Find Out"
+                font_name:"Lutuna"
+                font_size: 38
+                on_release:root.get_started()
+            Label:
+    Label:
+        id:my_label
+        color:0,0,1,1
+        font_name:"Maxwell"
+        font_size: 50
+        text:
+    Label:
